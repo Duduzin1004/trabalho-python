@@ -44,11 +44,13 @@ elif valida_reprovado:
 
 Desconto
 
-compra=input("digite o valor da compra: $")
-numero=float(numero)
+compra=(input("Digite o valor da compra: $"))
+valor=float(compra)
 valida_valor_desconto=valor>=100
-esconto=valor * 0.10
+valida_valor_normal=valor<100
+desconto=valor * 0.10
+
 if valida_valor_desconto:
-    print("valor original: $)
-elif valida_valor normal:
-    print
+    print("valor com desconto" , valor - desconto)
+elif valida_valor_normal:
+    print("valor sem desconto" , valor)
